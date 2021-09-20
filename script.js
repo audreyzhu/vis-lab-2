@@ -33,7 +33,7 @@ function filterData(category) {
 async function fetchData() {
 
 	// fetches the data and puts it in attractions
-	const response = await fetch('https://github.com/audreyzhu/vis-lab-2/attractions.json');
+	const response = await fetch('./attractions.json');
 	const data = await response.json();
 	attractions = data;
 	console.log('attractions - (a)', attractions);
